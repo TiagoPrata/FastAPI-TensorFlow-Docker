@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  pyserver:
+    build:
+      context: ./apps/pyserver
+      target: debug
+    ports:
+      - 5000:5000
+      - 5678:5678       # Debug port
+    networks:
+      - objid-network
+
+  tensorflow:
+    image: intel/intel-optimized-tensorflow-serving:2.4.0
+    ports:
+      - 8500:8500
+      - 8501:8501
+    volumes:
+      - ./model/saved_model_rfcn_resnet101:/models/rfcn
+    environment:
+      MODEL_NAME: rfcn
+      OMP_NUM_THREADS: 6                          # replace by the number of cores
+      TENSORFLOW_INTER_OP_PARALLELISM: 2
+      TENSORFLOW_INTRA_OP_PARALLELISM: 6          # replace by the number of cores
+    networks:
+      - objid-network
+
+
+networks: 
+  objid-network:
+    driver: bridge
