@@ -33,7 +33,13 @@
 
 3. **That's it!** Now go to [http://localhost:5000](http://localhost:5000) and use it.
 
+<br>
+
+<div align="center">
+
 ![Clone and deploy](https://raw.githubusercontent.com/TiagoPrata/FastAPI-TensorFlow-Docker/master/_media/clone_and_deploy.gif)
+
+</div>
 
 ## Developing, debugging, compiling, etc
 
