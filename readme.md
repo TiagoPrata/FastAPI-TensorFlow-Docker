@@ -13,7 +13,7 @@
 
 ## Usage
 
-![image](https://raw.githubusercontent.com/TiagoPrata/FastAPI-TensorFlow-Docker/master/_media/usage.gif)
+![Usage](https://raw.githubusercontent.com/TiagoPrata/FastAPI-TensorFlow-Docker/master/_media/usage.gif)
 
 ## How to use
 
@@ -33,6 +33,8 @@
 
 3. **That's it!** Now go to [http://localhost:5000](http://localhost:5000) and use it.
 
+![Clone and deploy](https://raw.githubusercontent.com/TiagoPrata/FastAPI-TensorFlow-Docker/master/_media/clone_and_deploy.gif)
+
 ## Developing, debugging, compiling, etc
 
 ### Requirements
@@ -49,7 +51,7 @@
 
 With all dependencies in place, open the cloned folder and create a new virtual environment using ```pipenv install```:
 
-![image](https://raw.githubusercontent.com/TiagoPrata/FastAPI-TensorFlow-Docker/master/_media/pipenv_install.gif)
+![Pipenv](https://raw.githubusercontent.com/TiagoPrata/FastAPI-TensorFlow-Docker/master/_media/pipenv_install.gif)
 
 ### How to build
 
